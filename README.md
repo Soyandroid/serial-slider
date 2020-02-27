@@ -32,6 +32,21 @@ ray. You will need a modified segatools either from my ilufang-dev branch, or
 possibly a future official version as these changes are not yet merged at the
 time of writing. You will need to configure the `[ir]` section in segatools.ini.
 
+Hardware Setup Notes
+-----
+
+This project is tested on Arduino Leonardo, which has several board-specific
+features. Please check the following if you are porting this to another
+micro-controller.
+
+* The default Serial on Leonardo is a USB CDC virtual port, which is unaffected
+  by the baudrate settings. I do not know the expected baudrate of CHUNITHM.
+* On Leonardo, serial DTR will not pull down board reset, but several other
+  Arduinos does.
+* Keyboard-mapped IR requires USB MCU.
+* Leonardo requires a DTR/RTS before it sends anything to the host over serial
+  on each reboot. Opening the Arduino serial monitor sends the DTR and RTS.
+
 Building
 -----
 
