@@ -23,7 +23,7 @@ Usage
 
 The main device creates a serial port. Please use device manager to assign this
 port to `COM1` as CHUNITHM expects the main device on that port number. You will
-also need to disable the segatools slider hook by setting `enabled` to 0 under
+also need to disable the segatools slider hook by setting `enable` to 0 under
 the `[slider]` section in segatools.ini.
 
 The side device sends keystrokes. By default the 6 IR rays, when broken, sends
