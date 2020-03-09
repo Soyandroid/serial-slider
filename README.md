@@ -45,7 +45,9 @@ micro-controller.
   Arduinos does.
 * Keyboard-mapped IR requires USB MCU.
 * Leonardo requires a DTR/RTS before it sends anything to the host over serial
-  on each reboot. Opening the Arduino serial monitor sends the DTR and RTS.
+  on each reboot. Opening the Arduino serial monitor sends the DTR and RTS. A
+  short program that sends DTR/RTS can be found
+  [here](https://dev.s-ul.eu/snippets/26). Run it before launching chuniApp
 
 Building
 -----
